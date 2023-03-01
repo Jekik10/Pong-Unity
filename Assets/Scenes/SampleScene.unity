@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 245250300}
   - component: {fileID: 245250302}
   m_Layer: 0
-  m_Name: Palla
+  m_Name: Ball
   m_TagString: Palla
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -408,6 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12dad9fa4f63e504f9ba0a58f0392a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  actualPosition: {x: 0, y: 0}
 --- !u!58 &245250301
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -640,6 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abac24033b6dbd47a74767f2039b41b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  l: {fileID: 1113859105}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,6 +928,7 @@ MonoBehaviour:
   p2ScoreText: {fileID: 1004020907}
   gameOverScreen: {fileID: 14082055}
   gameOverText: {fileID: 615713500}
+  b: {fileID: 245250300}
 --- !u!4 &1113859106
 Transform:
   m_ObjectHideFlags: 0
@@ -1119,6 +1123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a96649a0ac81a419485d86570b7fbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  l: {fileID: 1113859105}
 --- !u!61 &1706128644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1263,8 +1268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1bcaf02687b2b43810237f64a26a75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  palla: {fileID: 0}
-  logic: {fileID: 0}
+  ball: {fileID: 245250300}
   rb: {fileID: 1799211074}
   movementVelocity: 0.1
 --- !u!61 &1799211073

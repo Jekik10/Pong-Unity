@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class NetP2Script : MonoBehaviour
 {
+    public LogicScript l;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        LogicScript.addScore(1);
+        l.addScoreP1();
     }
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class P2Script : MonoBehaviour
 {
-    public BallScript palla;
-    public LogicScript logic;
+    public BallScript ball;
     public Rigidbody2D rb;
     public float movementVelocity;
     int frames = 0;
@@ -18,7 +17,7 @@ public class P2Script : MonoBehaviour
     {
         if (frames == 3)
         {
-            Vector2 coordinates = BallScript.actualPosition;
+            Vector2 coordinates = ball.actualPosition;
             if (coordinates.y > rb.position.y + 0.8 && rb.position.y < 4.1)
             {
                 rb.MovePosition(rb.position + (Vector2.up * new Vector2(1, movementVelocity)));
